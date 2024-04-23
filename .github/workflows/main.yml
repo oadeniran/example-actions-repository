@@ -17,4 +17,11 @@ jobs:
 
       - name: Step two run
         run: echo "This is the run for step 2"
+  second-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: STEP 1 in Job 2
+        run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event 
+      - name: STEP 2 In Job 2
+        run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by Github!
 
