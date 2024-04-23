@@ -1,0 +1,9 @@
+name: First git-action
+
+on: [push]
+
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "This is the first job"
